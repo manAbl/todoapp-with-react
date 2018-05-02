@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+  :root {
+  --bg: slateblue;
+  --margin: 2rem;
+  --border-radius: 4px;
+  --box-shadow: 5px 50px 100px 10px rgba(0,0,0,.5);
+}
+html,body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgba(0,0,0,.7);
+  font-family:'Roboto', sans-serif;
+}
+#root {
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 30% 40% 30%;
+  grid-template-columns: 30% 40% 30%;
+}
+::selection {
+  background: var(--bg);
+}

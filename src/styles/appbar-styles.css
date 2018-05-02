@@ -1,0 +1,33 @@
+.box {
+  width: 100%;
+  background: var(--bg);
+  height: calc( var(--margin) * 2);
+  padding: calc( var(--margin) - 1.2rem);
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+
+  display: flex;
+  flex-basis: 10%;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.btn {
+  border: 0;
+  outline: 0;
+  margin-top: 0.5rem;
+  background: transparent;
+  border-radius: var(--border-radius);
+}
+.btn i {
+  color: black;
+  padding: .7rem;
+  font-size: 16px;
+  font-weight: lighter;
+}
+.btn:hover {
+  cursor: pointer;
+  background: rgba(255,255,255,.2);
+}
+.btn:active {
+  background-color: rgba(20, 120, 180, .2);
+}

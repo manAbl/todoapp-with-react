@@ -1,0 +1,14 @@
+.todo-wrapper {
+  grid-row: 2/4;
+  grid-column: 2/3;
+
+  width: 100%;
+  height: 90vmin;
+  margin: 2rem 0;
+  background: whitesmoke;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius) var(--border-radius) 5px 5px;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
