@@ -5,10 +5,14 @@ const TasksList = (state) => {
   return (
     <div className="list-wrapper">
       <ul className="list">
+      <form>
+        <input type="text" placeholder="Do you have something to do?"/>
+        <button className='btn btn-add-task'>
+          <i className="fa fa-plus" aria-hidden="true"></i>
+        </button>
+      </form>
         <li className="list-item">
-          <input type="text">
             {state.text}
-          </input>
         </li>
       </ul>
     </div>

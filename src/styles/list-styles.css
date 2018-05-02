@@ -19,6 +19,37 @@
   overflow: hidden;
   width: 100%;
 }
+.list form {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 20%;
+  padding: 2rem;
+}
+.list form input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  color: gray;
+  padding: .2rem;
+  margin-right: 1rem;
+}
+.btn-add-task {
+  width: 10vmin;
+  height: 10vmin;
+  margin-top: -.2rem;
+  border-radius: 50%;
+  background: slateblue;
+  box-shadow: 0px 2px 4px 1px gray;
+
+  display: flex;
+  justify-content: center;
+}
+.btn-add-task:hover {
+  background: rgba(70,90,220, .8);
+}
+.list .btn-add-task i {
+  color: white;
+}
 .list-item {
   margin: 0;
   padding: 0;

@@ -7,7 +7,6 @@ class TodoApp extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      checked: false,
       text: 'old text',
     }
     this.handleAdd = this.handleAdd.bind(this);
