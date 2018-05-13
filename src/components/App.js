@@ -1,32 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../styles/app-styles.css';
-import AppBar from './AppBar/AppBar';
-import TasksList from './TasksList/TasksList';
+import Footer from './Footer';
+import AddTodo from '../containers/AddTodo';
+import VisibleTodoList from '../containers/VisibleTodoList';
 
-class TodoApp extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: 'old text',
-    }
-    this.handleAdd = this.handleAdd.bind(this);
-  }
-  handleAdd() {
-    this.setState({
-      text: 'new text',
-    })
-  }
-  render() {
-    const props = {
-      add: this.handleAdd,
-    };
-    return (
-      <div className="todo-wrapper">
-        <TasksList/>
-        <AppBar handleAdd={props.add} />
-      </div>
-    );
-  }
+const App = () => {
+    <div className="todo-wrapper">
+      <AddTodo />
+      <VisibleTodoList />
+      <Footer />
+    </div>
 }
 
-export default TodoApp;
+export default App;
