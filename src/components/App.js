@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../styles/app-styles.css';
 import Footer from './Footer';
 import AddTodo from '../containers/AddTodo';

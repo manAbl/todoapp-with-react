@@ -6,7 +6,7 @@ const TodoList = ({ todos, onClick }) => {
   return (
     <ul>
       { todos.map(todo => {
-        <Todo key={todo.id} {...todo} onClick={() => onTodoCLick(todo.id)} />
+        <Todo key={todo.id} {...todo} onClick={() => onTodoClick(todo.id)} />
       })}
     </ul>
   );
@@ -20,7 +20,7 @@ TodoList.propTypes = {
       text: Proptypes.text.isRequired,
     }).isRequired
   ).isRequired,
-  onTodoCLick: PropTypes.func.isRequired
+  onTodoClick: PropTypes.func.isRequired
 };
 
 export default TodoList;
