@@ -18,7 +18,7 @@ let AddTodo = ({ dispatch }) => {
           input.value = ''
         }}
       >
-        <input placeholder="Is there something you want to do?"
+        <input placeholder="Have to do something?"
           ref={node => {
             input = node
           }}

@@ -4,7 +4,7 @@
   height: 60vmin;
   margin: calc(var(--margin) - 1rem);
   padding: calc(var(--margin) - 1.6rem);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-r);
 
   display: flex;
   flex-flow: column nowrap;
@@ -20,12 +20,15 @@
   width: 100%;
 }
 .list-item {
-  margin: .8rem;
-  font-size: 17px;
-  padding: .6rem;
+  margin: calc(var(--padding) + .2rem);
+  font-size: calc(var(--fs) - 3px);
+  padding: var(--padding);
   position: relative;
+  border-left: 2px solid var(--bg);
   border-bottom: 2px solid #ecf0f1;
+  transition: var(--transition);
 }
 .list-item:last-child {
-  border: 0;
+  border-bottom: 0;
+  border-left: 2px solid var(--bg);
 }
