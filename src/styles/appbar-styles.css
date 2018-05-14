@@ -1,5 +1,6 @@
 .box {
   width: 100%;
+  text-align: center;
   background: var(--bg);
   height: calc( var(--margin) * 3);
   padding: calc( var(--margin) - 1.2rem);
@@ -11,23 +12,43 @@
   flex-flow: row nowrap;
   justify-content: space-around;
 }
-.btn {
-  border: 0;
-  outline: 0;
+.btn,
+.box p {
+  border: 0;  outline: 0;
   margin-top: 0.5rem;
+  color: white;
   background: transparent;
   border-radius: var(--border-radius);
 }
-.btn i {
-  color: black;
-  padding: .6rem;
-  font-size: 16px;
-  font-weight: lighter;
+.btn a {
+  background: linear-gradient(to top left,
+  rgba(171, 199, 114, 0.055),
+  rgba(62, 47, 202, 0.555),
+  rgb(65, 0, 126));
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px 2px rgb(51, 46, 46);
 }
-.btn:hover {
-  cursor: pointer;
-  background: rgba(255,255,255,.2);
+.btn a,
+.active {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: .6rem; font-size: 20px;
+  font-weight: bold;
 }
-.btn:active {
-  background-color: rgba(20, 120, 180, .2);
+.btn a:hover {
+  text-decoration: underline;
 }
+.active {
+  background: linear-gradient(to top left,
+  rgba(171, 199, 114, 0.055),
+  rgba(62, 47, 202, 0.555),
+  rgb(65, 0, 126));
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+}
+.active:hover {
+  cursor: default;
+}
+

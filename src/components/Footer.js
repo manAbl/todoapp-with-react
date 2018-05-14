@@ -1,25 +1,27 @@
-import React from 'react';
-import FilterLink from '../containers/FilterLink';
+import React from 'react'
+import '../styles/appbar-styles.css'
+import FilterLink from '../containers/FilterLink'
 
-const Footer = () => {
-  return (
-  <p>
-    Show:
-    {' '}
-    <FilterLink filter='SHOW_ALL'>
-      All
-    </FilterLink>
-    {', '}
-    <FilterLink filter='SHOW_ACTIVE'>
-      Active
-    </FilterLink>
-    {', '}
-    <FilterLink filter='SHOW_COMPLETED'>
-      Completed
-    </FilterLink>
-  </p>
-  );
-}
+const Footer = () => (
+  <div className="box">
+    <p> Show: </p>
+      {' '}
+    <div className="btn">
+      <FilterLink filter="SHOW_ALL">
+        All
+      </FilterLink>
+    </div>
+    <div className="btn">
+      <FilterLink filter="SHOW_ACTIVE">
+        Active
+      </FilterLink>
+    </div>
+    <div className="btn">
+      <FilterLink filter="SHOW_COMPLETED">
+        Completed
+      </FilterLink>
+    </div>
+  </div>
+)
 
-
-export default Footer;
+export default Footer
